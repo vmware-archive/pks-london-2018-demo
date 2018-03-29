@@ -3,11 +3,11 @@ This is a document to accompany the PKS demonstration which took place on the 28
 
 There are five steps:
 
-1. [Create a PKS cluster](#step1-createapkscluster)
-2. [Install and configure helm](#step2-installandconfigurehelm)
-3. [Install MongoDB](#step3-installmongodb)
-4. [Create a user-provided service in Pivotal Cloud Foundry](#step4-createauser-providedserviceinpivotalcloudfoundry)
-5. [Create a Spring Boot app to talk to MongoDB](#step5-createaspringbootapptotalktomongodb)
+1. [Create a PKS cluster](#step-1---create-a-pks-cluster)
+2. [Install and configure helm](#step-2---install-and-configure-helm)
+3. [Install MongoDB](#step-3---install-mongodb)
+4. [Create a user-provided service in Pivotal Cloud Foundry](#step-4---create-a-user-provided-service-in-pivotal-cloud-foundry)
+5. [Create a Spring Boot app to talk to MongoDB](#step-5---create-a-spring-boot-app-to-talk-to-mongodb)
 
 ## Step 1 - Create a PKS Cluster
 Note - you can skip this step if you already have a kubernetes environment running.
