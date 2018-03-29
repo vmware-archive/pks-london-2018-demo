@@ -255,7 +255,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.repository.query.Param;
 
 public interface CustomerRepo extends MongoRepository<Customer, String> {
-	public List<Customer> findCustomerNameIgnoreCaseContains(@Param("name") String customerName);
+	public List<Customer> findByCustomerNameIgnoreCaseContains(@Param("name") String customerName);
 }
 ```
 
