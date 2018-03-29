@@ -243,3 +243,29 @@ Start the app:
 ```
 
 Tada! You have a working Spring Boot app talking to MongoDB!
+
+If you wish, you can add a search interface by changing `CustomerRepo`:
+
+```java
+package io.pivotal.uk.demo.bank;
+
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.repository.query.Param;
+
+public interface CustomerRepo extends MongoRepository<Customer, String> {
+	public List<Customer> findCustomerNameIgnoreCaseContains(@Param("name") String customerName);
+}
+```
+
+Once changed, you can repackage the app:
+```
+% mvn package -DskipTests
+```
+...and then rep-push
+```
+% cf push -p target/bank-0.0.1-SNAPSHOT.jar bank
+```
+
+You will now have a search endpoint in the automatically generated Rest Repository under `/customers/search`
