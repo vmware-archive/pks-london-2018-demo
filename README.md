@@ -55,8 +55,8 @@ Once it is complete, grab the credentials:
 ```
 % pks get-credentials bank
 
-Fetching credentials for cluster cn01.
-Context set for cluster cn01.
+Fetching credentials for cluster bank.
+Context set for cluster bank.
 
 You can now switch between clusters by using:
 $kubectl config use-context <cluster-name>
