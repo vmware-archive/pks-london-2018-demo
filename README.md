@@ -124,7 +124,7 @@ Change these based on your own needs, but note the `MONGODB_SERVICETYPE` is Load
 
 Create a mongodb installation
 ```bash
-% helm install --name $MONGODB_NAME --set mongodbRootPassword=$MONGODB_ROOT_PW,mongodbUsername=$MONGODB_USERNAME,mongodbPassword=$MONGODB_PASSWORD,mongodbDatabase=$MONGODB_DATABASE stable/mongodb
+% helm install --name $MONGODB_NAME --set mongodbRootPassword=$MONGODB_ROOT_PW,mongodbUsername=$MONGODB_USERNAME,mongodbPassword=$MONGODB_PASSWORD,mongodbDatabase=$MONGODB_DATABASE,serviceType=$MONGODB_SERVICETYPE stable/mongodb
 ```
 
 Check the status:
